@@ -6,35 +6,6 @@ header{
     flex-wrap: wrap;
 }
 
-@media(max-width: 425px){
-    .logo{
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-
-    .coluna{
-        flex: 0 1 0;
-    }
-
-    h1{
-        text-align: center;
-    }
-
-    .menu{
-        flex-direction: column;
-        margin-top: 30px;
-    }
-
-    .menu li{
-        margin-left: 0;
-    }
-
-    nav{
-        width: 100%;
-        text-align: center;
-    }
-}
 
 .menu{
     display: flex;
@@ -65,7 +36,9 @@ header{
 }
 
 img{
-    max-width: 100%;
+    /* max-width: 100%; */
+    /* margin-left: 10px; */
+    width: 100%;
 }
 
 .coluna{
@@ -80,4 +53,40 @@ img{
 .botao{
     margin-top: auto;
     padding-top: 20px;
+}
+    
+@media(max-width: 425px){
+    .logo{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .coluna{
+        /* flex: 0 1 0; */
+        justify-content: center;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .menu{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .menu li{
+        margin-left: 0;
+    }
+
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+
+    nav{
+        width: 100%;
+        text-align: center;
+    }
 }
